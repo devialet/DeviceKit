@@ -1064,11 +1064,7 @@ extension Device {
 
     /// The user enabled Low Power mode
     public var lowPowerMode: Bool {
-      if #available(iOS 9.0, *) {
         return ProcessInfo.processInfo.isLowPowerModeEnabled
-      } else {
-        return false
-      }
     }
 
     /// Provides a textual representation of the battery state.
