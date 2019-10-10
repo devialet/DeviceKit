@@ -336,11 +336,11 @@ class DeviceKitTests: XCTestCase {
   }
 
   func testIsPlusSized() {
-    XCTAssertEqual(Device.allPlusSizedDevices, [.iPhone6Plus, .iPhone6sPlus, .iPhone7Plus, .iPhone8Plus])
+    XCTAssertEqual(Device.allPlusSizedDevices, [.iPhone6Plus, .iPhone6sPlus, .iPhone7Plus, .iPhone8Plus, .iPhoneXSMax, .iPhone11ProMax])
   }
 
   func testIsPro() {
-    XCTAssertEqual(Device.allProDevices, [.iPadPro9Inch, .iPadPro12Inch, .iPadPro12Inch2, .iPadPro10Inch, .iPadPro11Inch, .iPadPro12Inch3])
+    XCTAssertEqual(Device.allProDevices, [.iPhone11Pro, .iPhone11ProMax, .iPadPro9Inch, .iPadPro12Inch, .iPadPro12Inch2, .iPadPro10Inch, .iPadPro11Inch, .iPadPro12Inch3])
   }
 
   func testGuidedAccessSession() {
@@ -421,7 +421,7 @@ class DeviceKitTests: XCTestCase {
   }
 
   func testDescriptionFromIdentifier() {
-    XCTAssertEqual(Device.mapToDevice(identifier: "AppleTV5,3").description, "Apple TV 4")
+    XCTAssertEqual(Device.mapToDevice(identifier: "AppleTV5,3").description, "Apple TV HD")
     XCTAssertEqual(Device.mapToDevice(identifier: "AppleTV6,2").description, "Apple TV 4K")
   }
 
